@@ -5,7 +5,7 @@ import "./bottommorph.scss"
 const Bottommorph = () =>{
     return(
         <div className="bottommorph-container">
-        <img src='../../img/bubble_left.png'></img>
+        <img alt="bottommorph" src='../../../static/img/bubble_left.png'></img>
         </div>
     )
 }
