@@ -1,8 +1,13 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import Layout from '../components/layout/Layout'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
+import Navigation from '../components/navigation/navigation'
+import Topmorph from '../components/topmorph/topmorph'
+import Contact from '../components/contact/contact'
+import Bottommorph from '../components/bottommorph/bottommorph'
+
 
 const IndexPage = ( props ) => {
   const { node: data } = props.data.homePageData.edges[0]
@@ -13,17 +18,10 @@ const IndexPage = ( props ) => {
         <title>{`${data.frontmatter.seo_title}`}</title>
         <meta name="description" content={`${data.frontmatter.seo_desc}`} />
       </Helmet>
-      <h1>title: {data.frontmatter.title}</h1>
-      <p>Content: {data.frontmatter.text}</p>
-      <h2>BlogPosts:</h2>
-      {posts.map(({node: post}) => (
-        <div>
-          <h3>Blog Post Title: {post.frontmatter.title}</h3>
-          <p>Blog Post Description: {post.frontmatter.description}</p>
-          <p>Blog Post Date: {post.frontmatter.date}</p>
-          <Link to={post.fields.slug} title="link to blog post">Link to blog post</Link>
-        </div>
-      ))}
+      <Navigation />
+      <Topmorph />
+      <Contact />
+      <Bottommorph />
     </Layout>
   )
 }

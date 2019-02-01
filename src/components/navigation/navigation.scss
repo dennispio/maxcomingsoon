@@ -1,0 +1,19 @@
+.navigation-container{
+    position: fixed;
+    z-index:200;
+    width: 100vw;
+    height: 105px;
+    background: #FFFFFF;
+    box-shadow: 0px -10px 35px rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+    img {
+        height: 54px;
+        weight: auto;
+        position: absolute;
+        left: 1.81%;
+        right: 92.22%;
+        top: 20.8%;
+    }
+}
