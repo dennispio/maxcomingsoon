@@ -4,11 +4,31 @@
     width: 100%;
     z-index: -100;
     img{
-        width: 60vw;
+        width: 40vw;
         height: auto;
         @include media-query-phone {
             margin-left: 0;
             width:100vw;
         }
     }
+    .link-container {
+        max-width: 150px;
+        margin: 0 auto;
+        display: flex;
+        .link {
+            width: 50%;
+            text-align: center;
+            padding: 5px 5px 5px 5px;
+            margin-right: 10px;
+            margin-top: -50px;
+            a {
+                text-decoration: none;
+                font-size: 12px;
+                text-align: center;
+                letter-spacing: -0.5px;
+                color: #323737;
+            }
+        }
+    }
 }
+
