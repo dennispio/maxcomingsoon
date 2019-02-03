@@ -1,8 +1,11 @@
 @import '../../constatns/variables.scss';
 .topmorph-container{
-    padding-top:105px;
+    padding-top: 90px;
     width: 100%;
     z-index: -100;
+    @include media-query-phone {
+        padding-top: 75px;
+    }
     img{
         width: 60vw;
         height: auto;
