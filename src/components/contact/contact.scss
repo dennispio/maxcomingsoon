@@ -31,23 +31,25 @@
     }
 
     .button-container {
-        padding-top: 25px;
-        max-width: 300px;
+        padding-top: 20px;
+        padding-left: 10px;
+        max-width: 330px;
         margin: 0 auto;
         display: flex;
         .button {
-            width: 50%;
             text-align: center;
-            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
             padding: 5px 5px 5px 5px;
-            margin-right: 10px;
-            a {
+            button {
+                padding: 5px 48px;
+                background-color: white;
+                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
                 text-decoration: none;
                 line-height: 22px;
                 font-size: 16px;
                 text-align: center;
                 letter-spacing: -0.5px;
                 color: #323737;
+                border:none;
             }
         }
     }

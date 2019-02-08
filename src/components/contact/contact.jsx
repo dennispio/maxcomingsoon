@@ -12,10 +12,10 @@ const Contact = ()=>{
         </div>
         <div className="button-container">
           <div className="button">
-            <a href="mailto:Kontakt@ernaehrungsberatung-faber.de?subject=Ernährungsberatung">E-Mail</a>
+            <a href="mailto:Kontakt@ernaehrungsberatung-faber.de?subject=Ernährungsberatung"><button>E-Mail</button></a>
           </div>
           <div className="button">
-            <a href="tel:+4915785624045">Telefon</a>
+            <a href="tel:+4915785624045"><button>Telefon</button></a>
           </div>
         </div>
       </div>  
